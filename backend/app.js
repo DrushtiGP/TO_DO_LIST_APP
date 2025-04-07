@@ -4,7 +4,7 @@ const cors = require('cors');
 const todoRoute = require("./routes/todo");
 
 const app = express();
-const port = 3000;
+const port = 3000 || process.env.port;
 
 app.use(cors());
 app.use(express.json());
